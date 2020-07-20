@@ -1,0 +1,122 @@
+/* Default styling */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.menu{
+    height: 5%;
+    max-width: inherit;
+    border: 0.1rem solid black;
+    display: flex;
+    color : white;
+    background-color: #424242;
+}
+.menu>*{
+     padding: 0.2rem 1.1rem;
+}
+.menu-options-item{
+    height: 6%;
+    display: none;
+}
+
+.menu-options-item.active{
+   
+    max-width: inherit;
+    border: 0.1rem solid black;
+    display:flex;
+    background-color: #424242;
+}
+.menu-group{
+    display:flex;
+}
+.style-options{
+     display: flex;
+}
+.format-component{
+    padding: 0.2rem 1.1rem;
+}
+
+.format-component>*{
+    background-color: #c7ecee;
+    min-width: 5rem;
+}
+/* #file-menu-options>*,.menu>*{
+    padding-left: 1rem;
+} */
+.formula-bar{
+    height: 4%;
+    max-width: inherit;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    background-color: #FFCDD2;
+}
+
+/* grid */
+
+.cell-container{
+    background-color: springgreen;
+    height: calc(100vh - 115px);
+    overflow: auto;
+    position: relative;
+}
+.cell-container>*{
+position: absolute;
+top:0px;
+}
+
+.top-left-cell{
+    height: 1.55rem;
+    width: 1.55rem;
+    border: 0.1rem solid black;
+    background-color: lightcyan;
+}
+
+.top-row{
+    display: flex;
+    background-color: #FF5252;
+    top: 0px;
+    left: 1.55rem;
+}
+.top-row .cell{
+   border: 0.1rem solid black;
+    min-height: 2rem;
+    min-width: 7rem;
+    text-align: center;
+}
+.left-col{
+    width: 25px;
+    background-color: #FF5252;
+    top: 1.55rem;
+}
+
+.left-col .cell{
+    border: 0.1rem solid black;
+    min-height: 2rem;
+    min-width: 1.55rem;
+    text-align: center;
+}
+
+
+.grid{
+top:1.55rem;
+left: 1.55rem;
+}
+.row{
+    display:flex;
+}
+.row .cell{
+    min-height: 2rem;
+    min-width: 7rem;
+    border: 0.001rem solid black;
+}
+
+.sheets{
+    height: 4%;
+    max-width: inherit;
+    border: 0.1rem solid black;
+    background-color: #424242;
+    color: white;
+}
